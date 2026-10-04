@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: genai-chatbot
+Version: 0.1.0
+Summary: Generative AI chatbot built with Streamlit and Groq
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit
+Requires-Dist: python-dotenv
+Requires-Dist: langchain-community
+Requires-Dist: langchain-groq
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+
+# GenAI Chatbot
+
+A simple Streamlit-based chatbot project powered by Groq's LLM API.
+
+## Project structure
+
+- `chatbot.py` — application entry point
+- `src/genai_chatbot/app.py` — chatbot logic
+- `tests/` — unit tests
+
+## Setup
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -U pip
+pip install -e .[dev]
+cp .env.example .env
+```
+
+Then add your Groq API key to `.env`.
+
+## Run the app
+
+```bash
+streamlit run chatbot.py
+```
+
+## Run tests
+
+```bash
+pytest
+```

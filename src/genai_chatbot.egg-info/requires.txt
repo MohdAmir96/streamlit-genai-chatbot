@@ -1,0 +1,7 @@
+streamlit
+python-dotenv
+langchain-community
+langchain-groq
+
+[dev]
+pytest>=8.0.0

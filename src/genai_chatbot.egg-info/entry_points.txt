@@ -1,0 +1,2 @@
+[console_scripts]
+genai-chatbot = genai_chatbot.app:main
